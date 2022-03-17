@@ -49,7 +49,7 @@ public class GiaoDichDat extends GiaoDich {
             select = " loai C  ";
         }else
         {
-            select = " ban da nhap sai loai dat ";
+            select = " ban da nhap sai loai dat !!! ";
         }
         String result = super.toString() + " |" +  " nha loai " + select + " |" + " Thanh Tien  " + ThanhTien();
         return result;

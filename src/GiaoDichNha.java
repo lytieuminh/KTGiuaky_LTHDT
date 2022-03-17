@@ -32,7 +32,7 @@ public class GiaoDichNha extends GiaoDich {
     public double ThanhTien(){
         if( LoaiNha == 1 ){
             return this.ThanhTien = this.dientich * this.dongia * 0.8;
-        }else {
+        }else{
             return this.ThanhTien = this.dientich * this.dongia;
         }
     }
@@ -41,12 +41,12 @@ public class GiaoDichNha extends GiaoDich {
         String select;
         if( LoaiNha == 1)
         {
-            select = " sinh hoat ";
+            select = " nha thuong ";
         }else if ( LoaiNha == 2)
         {
-            select = " kinh doanh";
+            select = " cao cap ";
         }else {
-            select = " ban da nhap sai doi tuong KH ";
+            select = " ban nhap sai loai nha !!! ";
         }
         
         String result = super.toString() + " |" +  " Loai Nha  " + select + " |" + " Thanh Tien " + ThanhTien();

@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class GiaoDich {
-
     
     protected String MaGD;
     protected String ngayGD;

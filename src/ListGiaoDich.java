@@ -1,7 +1,7 @@
 public class ListGiaoDich {
 
     GiaoDich A[] = new GiaoDich[50];
-    private int Count, dem1 = 0 , dem2 = 0 , sum3 = 0 ;
+    private int Count, dem1 = 0 , dem2 = 0 , sum = 0 ;
 
     public ListGiaoDich()
     {
@@ -23,7 +23,7 @@ public class ListGiaoDich {
                 GiaoDichDat x = new GiaoDichDat();
                 x.nhap();
                 A[Count] = x;
-                this.sum3 += x.ThanhTien();
+                this.sum += x.ThanhTien();
                 dem1++;
 
             }
@@ -41,6 +41,7 @@ public class ListGiaoDich {
 
     public void XuatDanhSachGiaoDich(){
         for ( int i = 0 ; i<Count; i++){
+            System.out.println("======================================================================");
             System.out.println("\n Don Giao Dich Thu " + (i+1));
             System.out.println(A[i].toString());
         }
@@ -53,6 +54,6 @@ public class ListGiaoDich {
     }
 
     public void TinhTrungBinhTienDat(){
-            System.out.println(" Trung binh thanh tien cua giao dich nha dat " + sum3 / dem1 );
+            System.out.println(" Trung binh thanh tien cua giao dich nha dat " + sum / dem1 );
     }
 }

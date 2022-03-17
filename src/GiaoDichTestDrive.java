@@ -12,6 +12,7 @@ public class GiaoDichTestDrive {
             System.out.println(">>3. Xuat Danh Sach Giao Dich                  ");
             System.out.println(">>4. Tong So Giao Dich Tung Loai Giao Dich     ");
             System.out.println(">>5. Tien Trung binh Tu Viec Giao Dich Dat     ");
+            System.out.println(">>6. Xuat Ra Giao Dich Thang 9/2013            ");
             System.out.println(">>0. Exit.                                     ");
             System.out.println("===============================================");
             System.out.print("Chọn chức năng: ");
@@ -31,6 +32,9 @@ public class GiaoDichTestDrive {
                     break;
                 case 5:
                     GD.TinhTrungBinhTienDat();
+                    break;
+                case 6:
+                    System.out.println(" Em xin lỗi thầy em vẫn chưa làm biet lam kieu ngay XD ");
                     break;
             }
     }while(key!=0);
